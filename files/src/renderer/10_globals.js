@@ -80,7 +80,6 @@ const standard_lc0_options = {
 	"LogLiveStats": true,
 	"MoveOverheadMs": 0,
 	"MultiPV": 500,
-	"ScoreType": "centipawn",
 	"SmartPruningFactor": 0,
 	"UCI_ShowWDL": true,
 	"VerboseMoveStats": true,
