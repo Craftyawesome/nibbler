@@ -3021,6 +3021,18 @@ function menu_build() {
 					label: "Threads",
 					submenu: [
 						{
+							label: "14",
+							type: "checkbox",
+							checked: false,
+							click: () => {
+								win.webContents.send("call", {
+									fn: "set_uci_option_permanent",
+									args: ["Threads", 14],
+								});
+								// Will receive an ack IPC which sets menu checks.
+							}
+						},
+						{
 							label: "12",
 							type: "checkbox",
 							checked: false,
